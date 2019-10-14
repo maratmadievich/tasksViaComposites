@@ -8,22 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		AA5DE1E82354EA52004A3621 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DE1E72354EA52004A3621 /* AppDelegate.swift */; };
-		AA5DE1EA2354EA52004A3621 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DE1E92354EA52004A3621 /* ViewController.swift */; };
-		AA5DE1ED2354EA52004A3621 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5DE1EB2354EA52004A3621 /* Main.storyboard */; };
+		AA5DE1EA2354EA52004A3621 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DE1E92354EA52004A3621 /* TaskViewController.swift */; };
+		AA5DE1ED2354EA52004A3621 /* Task.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5DE1EB2354EA52004A3621 /* Task.storyboard */; };
 		AA5DE1F02354EA52004A3621 /* Tasks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA5DE1EE2354EA52004A3621 /* Tasks.xcdatamodeld */; };
 		AA5DE1F22354EA54004A3621 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5DE1F12354EA54004A3621 /* Assets.xcassets */; };
 		AA5DE1F52354EA54004A3621 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5DE1F32354EA54004A3621 /* LaunchScreen.storyboard */; };
+		AA5DE2022354ED81004A3621 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DE2012354ED81004A3621 /* TaskCell.swift */; };
+		AA5DE2062354EFC2004A3621 /* TaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DE2052354EFC2004A3621 /* TaskProtocol.swift */; };
+		AA5DE2082354EFCC004A3621 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DE2072354EFCC004A3621 /* Task.swift */; };
+		AA5DE20A2354F861004A3621 /* TaskCellPresenterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DE2092354F861004A3621 /* TaskCellPresenterFactory.swift */; };
+		AA5DE20C2354F8D5004A3621 /* TaskCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DE20B2354F8D5004A3621 /* TaskCellPresenter.swift */; };
+		AA5DE20E2354FED1004A3621 /* TaskRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DE20D2354FED1004A3621 /* TaskRoot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA5DE1E42354EA52004A3621 /* Tasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5DE1E72354EA52004A3621 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA5DE1E92354EA52004A3621 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AA5DE1EC2354EA52004A3621 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA5DE1E92354EA52004A3621 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		AA5DE1EC2354EA52004A3621 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Task.storyboard; sourceTree = "<group>"; };
 		AA5DE1EF2354EA52004A3621 /* Tasks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tasks.xcdatamodel; sourceTree = "<group>"; };
 		AA5DE1F12354EA54004A3621 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA5DE1F42354EA54004A3621 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA5DE1F62354EA54004A3621 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA5DE2012354ED81004A3621 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		AA5DE2052354EFC2004A3621 /* TaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskProtocol.swift; sourceTree = "<group>"; };
+		AA5DE2072354EFCC004A3621 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		AA5DE2092354F861004A3621 /* TaskCellPresenterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellPresenterFactory.swift; sourceTree = "<group>"; };
+		AA5DE20B2354F8D5004A3621 /* TaskCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellPresenter.swift; sourceTree = "<group>"; };
+		AA5DE20D2354FED1004A3621 /* TaskRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRoot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,61 @@
 		AA5DE1E62354EA52004A3621 /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
+				AA5DE2032354EF9B004A3621 /* Common */,
+				AA5DE1FC2354EBC0004A3621 /* Modules */,
 				AA5DE1E72354EA52004A3621 /* AppDelegate.swift */,
-				AA5DE1E92354EA52004A3621 /* ViewController.swift */,
-				AA5DE1EB2354EA52004A3621 /* Main.storyboard */,
 				AA5DE1F12354EA54004A3621 /* Assets.xcassets */,
 				AA5DE1F32354EA54004A3621 /* LaunchScreen.storyboard */,
 				AA5DE1F62354EA54004A3621 /* Info.plist */,
 				AA5DE1EE2354EA52004A3621 /* Tasks.xcdatamodeld */,
 			);
 			path = Tasks;
+			sourceTree = "<group>";
+		};
+		AA5DE1FC2354EBC0004A3621 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AA5DE1FE2354EC52004A3621 /* Tasks */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		AA5DE1FE2354EC52004A3621 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				AA5DE2002354ED5E004A3621 /* Cell */,
+				AA5DE1E92354EA52004A3621 /* TaskViewController.swift */,
+				AA5DE1EB2354EA52004A3621 /* Task.storyboard */,
+				AA5DE2092354F861004A3621 /* TaskCellPresenterFactory.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		AA5DE2002354ED5E004A3621 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AA5DE2012354ED81004A3621 /* TaskCell.swift */,
+				AA5DE20B2354F8D5004A3621 /* TaskCellPresenter.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AA5DE2032354EF9B004A3621 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AA5DE2042354EFB0004A3621 /* Composite */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AA5DE2042354EFB0004A3621 /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+				AA5DE2052354EFC2004A3621 /* TaskProtocol.swift */,
+				AA5DE2072354EFCC004A3621 /* Task.swift */,
+				AA5DE20D2354FED1004A3621 /* TaskRoot.swift */,
+			);
+			path = Composite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +185,7 @@
 			files = (
 				AA5DE1F52354EA54004A3621 /* LaunchScreen.storyboard in Resources */,
 				AA5DE1F22354EA54004A3621 /* Assets.xcassets in Resources */,
-				AA5DE1ED2354EA52004A3621 /* Main.storyboard in Resources */,
+				AA5DE1ED2354EA52004A3621 /* Task.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,21 +196,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA5DE1EA2354EA52004A3621 /* ViewController.swift in Sources */,
+				AA5DE2022354ED81004A3621 /* TaskCell.swift in Sources */,
+				AA5DE1EA2354EA52004A3621 /* TaskViewController.swift in Sources */,
 				AA5DE1E82354EA52004A3621 /* AppDelegate.swift in Sources */,
 				AA5DE1F02354EA52004A3621 /* Tasks.xcdatamodeld in Sources */,
+				AA5DE2082354EFCC004A3621 /* Task.swift in Sources */,
+				AA5DE20E2354FED1004A3621 /* TaskRoot.swift in Sources */,
+				AA5DE20C2354F8D5004A3621 /* TaskCellPresenter.swift in Sources */,
+				AA5DE2062354EFC2004A3621 /* TaskProtocol.swift in Sources */,
+				AA5DE20A2354F861004A3621 /* TaskCellPresenterFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AA5DE1EB2354EA52004A3621 /* Main.storyboard */ = {
+		AA5DE1EB2354EA52004A3621 /* Task.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AA5DE1EC2354EA52004A3621 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Task.storyboard;
 			sourceTree = "<group>";
 		};
 		AA5DE1F32354EA54004A3621 /* LaunchScreen.storyboard */ = {

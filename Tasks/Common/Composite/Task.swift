@@ -7,3 +7,35 @@
 //
 
 import Foundation
+
+class Task: TaskProtocol {
+	
+	private var root: TaskProtocol?
+	private var name: String!
+	private var childs: [TaskProtocol] = []
+	
+	var rootTask: TaskProtocol? {
+		return self.root
+	}
+	
+	var taskName: String {
+		return self.name
+	}
+	
+	var childTasks: [TaskProtocol] {
+		return childs
+	}
+	
+	required init(taskName: String, rootTask: TaskProtocol?) {
+		self.name = taskName
+		self.root = rootTask
+	}
+	
+	func addSubtask(_ subtask: TaskProtocol) {
+		self.childs.append(subtask)
+	}
+}
+
+
+
+

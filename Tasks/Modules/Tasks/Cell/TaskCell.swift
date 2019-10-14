@@ -6,4 +6,11 @@
 //  Copyright © 2019 Марат Нургалиев. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class TaskCell: UITableViewCell {
+	
+	@IBOutlet weak var labelName: UILabel!
+	@IBOutlet weak var labelCount: UILabel!
+	
+}
